@@ -13,7 +13,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'reports/**/*.*', fingerprint: true
-            junit 'reports/**/JUnit_Report.xml'
+            junit testResults: 'reports/**/JUnit_Report.xml'
         }
     }
 }
