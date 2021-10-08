@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sudo bash ./run_Test.sh 
+                sudo bash ./run_Test.sh
             }
         }
     }
@@ -11,5 +11,5 @@ pipeline {
         always {
            junit 'reports/**/JUnit_Report.xml'
        }
-    } 
+    }
 }
