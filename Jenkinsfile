@@ -9,8 +9,8 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'reports/**/*'
-            junit testResults: 'reports/**/JUnit_Report.xml'
+            archiveArtifacts artifacts: "reports/**/*"
+            junit testResults: "reports/**/JUnit_Report.xml"
         }
     }
 }
