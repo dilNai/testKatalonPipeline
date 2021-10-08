@@ -7,10 +7,10 @@ pipeline {
             }
         }
     }
-   /* post {
-        always {
-            archiveArtifacts artifacts: 'reports/**/*'
-            junit testResults: 'reports/**/JUnit_Report.xml'
-        }
-    } */
+//    post {
+//        always {
+//            archiveArtifacts artifacts: 'reports/**/*'
+//            junit testResults: 'reports/**/JUnit_Report.xml'
+//        }
+//    } 
 }
