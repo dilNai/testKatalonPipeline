@@ -2,7 +2,7 @@ pipeline {
     agent {
         label 'test-project'
         }
-    }
+   
     stages {
         stage('Test') {
             steps {
