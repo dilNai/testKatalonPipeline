@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image 'katalonstudio/katalon'
-            args "-u root"
+        label 'test-project'
         }
     }
     stages {
