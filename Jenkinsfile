@@ -1,7 +1,6 @@
 pipeline {
-    agent {
-        label 'test-project'
-        }
+
+    agent any
    
     stages {
         stage('Test') {
