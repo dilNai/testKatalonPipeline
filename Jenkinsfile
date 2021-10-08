@@ -5,14 +5,15 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'katalonc.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"'
+                sudo bash ./run_Test.sh
             }
         }
     }
+    
     post {
         always {
-            archiveArtifacts artifacts: 'report/**/*.*', fingerprint: true
-            junit 'report/**/JUnit_Report.xml'
+            archiveArtifacts artifacts: 'reports/**/*.*', fingerprint: true
+            junit 'reports/**/JUnit_Report.xml'
         }
     }
 }
