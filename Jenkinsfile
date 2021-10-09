@@ -5,11 +5,12 @@ pipeline {
             steps {
                 sudo bash ./run_Test.sh
             }
-        }
-    }
-    post {
-        always {
-           junit 'reports/**/JUnit_Report.xml'
-       }
-    }
+		    post  {
+				 always {
+				   junit 'reports/**/JUnit_Report.xml'
+			   }
+            }
+          }
+    
+     }
 }
