@@ -3,7 +3,7 @@
 rm -rfv ./reports/testCheck
 mkdir -p .reports/testCheck
 
-docker build -pull --no-cache -t dil_test_image
+docker build --pull --no-cache -t dil_test_image
 
 echo "dcoker build completed"
 
