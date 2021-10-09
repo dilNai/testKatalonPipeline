@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sudo bash ./run_Test.sh
+                sudo bash './run_Test.sh'
             }
 		    post  {
 				 always {
