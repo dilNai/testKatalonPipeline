@@ -1,3 +1,3 @@
-FROM katalonstudio/katalon
+FROM katalonstudio/katalon:latest
 
 COPY . /katalon/katalon/source
