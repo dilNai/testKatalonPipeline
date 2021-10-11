@@ -5,9 +5,9 @@ mkdir -p .reports/testCheck
 
 #docker build --pull --no-cache -t katalonstudio/katalon .
 
-docker build -t katalonstudio/katalon .
+docker build .
 
-echo "dcoker build completed"
+echo "docker build completed"
 
 echo "katalon test started"
 
