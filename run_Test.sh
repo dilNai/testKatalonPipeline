@@ -3,9 +3,9 @@
 rm -rfv ./reports/testCheck
 mkdir -p .reports/testCheck
 
-//docker build --pull --no-cache -t katalonstudio/katalon .
+#docker build --pull --no-cache -t katalonstudio/katalon .
 
-docker build
+docker build -t katalonstudio/katalon .
 
 echo "dcoker build completed"
 
