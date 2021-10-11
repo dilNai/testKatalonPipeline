@@ -11,7 +11,7 @@ echo "dcoker build completed"
 
 echo "katalon test started"
 
-docker run -v "$(pwd)":/katalon/katalon/source katalonstudio/katalon  --name dil_katalon katalonstudio/katalon katalon.sh \
+docker run -v "$(pwd)":/katalon/katalon/source  --name dil_katalon katalonstudio/katalon katalon.sh \
     -projectPath='/katalon/katalon/source/test.prj \
     -browserType=Chrome \
     -retry=0 \
