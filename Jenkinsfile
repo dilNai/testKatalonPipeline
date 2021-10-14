@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker{
-              label 'any'
+              image 'dil_test_image'
+              label 'any'   
             }
         } 
     stages {
