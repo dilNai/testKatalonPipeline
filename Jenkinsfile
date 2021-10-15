@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             agent {
-                 docker{
-                   image 'dil_test_image'
-                  }
+                 label 'dind'
             } 
             steps {
                 sh """
